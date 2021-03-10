@@ -1,0 +1,105 @@
+:root {
+  --basicColor: #409EFF;
+}
+*{
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 14px;
+}
+input{
+  background: none;
+  outline: none;
+  border: none;
+}
+input::placeholder{
+  font-size: 14px !important;
+}
+
+.container{
+  width: 320px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.rgb-title-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title{
+  font-size: 16px;
+}
+
+#toggle-btn{
+  user-select: none;
+}
+#toggle-btn:hover{
+  cursor: pointer;
+  color: var(--basicColor);
+}
+
+.toggle-container{
+  margin: 10px 0;
+}
+.toggle-container input{
+  height: 22px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 3px;
+  padding: 0px 5px;
+  font-size: 14px;
+  flex: 1;
+  margin-right: 10px;
+}
+.toggle-container div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.transformation{
+  height: 22px;
+  padding: 0 5px;
+  border: 1px solid var(--basicColor);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--basicColor);
+  cursor: pointer;
+}
+.toggle-container .result{
+  margin-top: 10px;
+  justify-content: flex-start;
+}
+.toggle-container .result #color-area{
+  margin-left: 10px;
+  flex: 1;
+  height: 20px;
+  border-radius: 2px;
+}
+.result .transformation{
+  margin-left: 10px;
+}
+
+#copyInput{
+  position: absolute;
+  right: -300px;
+}
+
+.tips{
+  margin-top: 20px;
+}
+.tips > p{
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.tips > div{
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.tips span{
+  background-color: rgb(235, 235, 235);
+  border-radius: 2px;
+  padding: 0 5px;
+}

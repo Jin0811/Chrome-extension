@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup</title>
+  <link rel="stylesheet" href="./popup.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="rgb-title-container">
+      <p class="title" id="title"></p>
+      <P id="toggle-btn">切换</P>
+    </div>
+    <div class="toggle-container">
+      <div>
+        <input type="text" id="transformInput">
+        <p class="transformation" id="transformationBtn">转换</p>
+      </div>
+      <div class="result">
+        <p>
+          <span>转换结果：</span>
+          <span id="resultStr"></span>
+        </p>
+        <div id="color-area"></div>
+        <input type="text" id="copyInput">
+        <p class="transformation" id="copyBtn">复制</p>
+      </div>
+    </div>
+
+    <div class="tips">
+      <div>Tips：</div>
+      <p>1. 点击切换，可以切换10进制和16进制</p>
+      <p>2. 10转16时，格式为：<span>64,158,255</span>，以英文逗号分割，逗号后面可以有空格</p>
+      <p>3. 16转10时，格式可以为以下其中之一： <span>#fff</span>、<span>fff</span>、<span>#ffffff</span>、<span>ffffff</span></p>
+    </div>
+
+  </div>
+</body>
+<script src="./lib/jquery.min.js"></script>
+<script src="./popup.js"></script>
+</html>
