@@ -82,7 +82,7 @@ function transformForSixteen(rgbStr){
       result = null;
       break;
     }
-    if(item < 16){
+    if(item > 9 && item < 16){
       let letter = judge(15 - item);
       result = result + `0${letter}`
     }else{
